@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Contains hooks for background_switcher.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function background_switcher_theme() {
+  return [
+    'background_switcher' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements template_preprocess_html().
+ */
+function background_switcher_preprocess_html(&$vars) {
+  if (isset($vars['html_attributes'])) {
+    /** @var \Drupal\Core\Template\Attribute $vars['html_attributes'] */
+    $vars['html_attributes']->setAttribute('data-theme', 'dark');
+  }
+}

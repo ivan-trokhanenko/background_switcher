@@ -1,0 +1,7 @@
+name: 'Background Switcher'
+type: module
+description: 'This module provides background switcher block.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:block
