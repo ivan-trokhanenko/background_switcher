@@ -1,7 +1,7 @@
 Background Switcher
 -------------------
 
-#How to use:
+## How to use:
 This module provides a switch background button and adds a "data-theme" attribute to HTML than can be used in your custom CSS.
 
 See example below:
